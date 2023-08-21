@@ -3,5 +3,6 @@
   "buildCommand": "npm run build-storybook",
   "devCommand": "npm run storybook",
   "installCommand": "npm install --legacy-peer-deps",
-  "framework": null
+  "framework": null,
+  "outputDirectory": "storybook-static"
 }
