@@ -1,6 +1,5 @@
 import React, { MouseEventHandler } from 'react';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'antd';
 
 export interface ModifiedButtonProps{
   text?: string;
@@ -14,7 +13,7 @@ const ModifiedButton: React.FC<ModifiedButtonProps> = ({ text="Button", primary=
   return (
     <Button 
       onClick={onClick} 
-      variant={primary ? "primary" : "secondary"}
+      type={primary ? "primary" : "default"}
       disabled={disabled}
     >
       {text}

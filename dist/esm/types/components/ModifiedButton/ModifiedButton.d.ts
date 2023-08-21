@@ -1,5 +1,4 @@
 import React, { MouseEventHandler } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 export interface ModifiedButtonProps {
     text?: string;
     primary?: boolean;

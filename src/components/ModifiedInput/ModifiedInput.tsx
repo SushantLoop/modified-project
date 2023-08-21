@@ -1,6 +1,5 @@
 import React, { ChangeEventHandler } from 'react';
-import Form from 'react-bootstrap/Form';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Input } from 'antd';
 
 export interface ModifiedInputProps{
   placeholder?: string;
@@ -10,10 +9,10 @@ export interface ModifiedInputProps{
 
 const ModifiedInput: React.FC<ModifiedInputProps> = ({ placeholder="Text", size="small", onChange }) => {
   return (
-    <Form.Control 
+    <Input 
       type="text" 
       placeholder={placeholder}  
-      size={size == "small" ? "sm" : "lg"}
+      size={size == "small" ? "small" : "large"}
       onChange={onChange}
     />
   )
